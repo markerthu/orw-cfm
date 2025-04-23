@@ -93,7 +93,7 @@ class ORWCFMTrainer:
             text=self.config['text_prompts'],
             return_logit=True
         )
-        rewards = image_prob[:, 0] - image_prob[:, 1]
+        rewards = image_prob[:, 0] - image_prob[:, 1] # you can use other rewards
 
         return samples, rewards
 
