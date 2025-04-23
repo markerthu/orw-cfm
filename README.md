@@ -15,9 +15,8 @@ Our approach integrates reinforcement learning into the flow matching framework 
 3. **Tractable W2 Distance Bound**: Enables efficient computation of the W2 distance in flow matching models
 
 The loss function is defined as:
-$$
-\mathcal{L}_{\text{ORW-CFM-W2}} = \mathbb{E}_{t \sim \mathcal{U}(0,1), x_1 \sim q(x_1; \theta_{\text{ft}}), x \sim p_t(x|x_1)}[w(x_1) \|v_{\theta_{\text{ft}}}(t, x) - u_t(x|x_1)\|^2 + \alpha \|v_{\theta_{\text{ft}}}(t, x) - v_{\theta_{\text{ref}}}(t, x)\|^2]
-$$
+
+$\mathcal{L}_{\text{ORW-CFM-W2}} = \mathbb{E}[w(x_1) \|v_{\theta_{\text{ft}}}(t, x) - u_t(x|x_1)\|^2 + \alpha \|v_{\theta_{\text{ft}}}(t, x) - v_{\theta_{\text{ref}}}(t, x)\|^2]$
 
 
 Where:
