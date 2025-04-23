@@ -16,7 +16,7 @@ Our approach integrates reinforcement learning into the flow matching framework 
 
 The loss function is defined as:
 
-$$ L_{ORW-CFM-W2} = w(x_1) \|v_{\theta_{\text{ft}}}(t, x) - u_t(x|x_1)\|^2 + \alpha \|v_{\theta_{\text{ft}}}(t, x) - v_{\theta_{\text{ref}}}(t, x)\|^2 $$
+$$ L_{ORW-CFM-W2} = \mathbb{E} w(x_1) \|v_{\theta_{\text{ft}}}(t, x) - u_t(x|x_1)\|^2 + \alpha \|v_{\theta_{\text{ft}}}(t, x) - v_{\theta_{\text{ref}}}(t, x)\|^2 $$
 
 
 Where:
