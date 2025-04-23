@@ -136,7 +136,7 @@ url={https://openreview.net/forum?id=2IoFFexvuw}
 
 ## Pre-trained Models
 
-For experiments like CIFAR-10/MNIST, we recommend using pre-trained flow matching models from the torch-cfm repository. You can train a model using their example script:
+For experiments like CIFAR-10 or MNIST, we recommend using pre-trained flow matching models from the torch-cfm repository. You can train a model using their example script:
 
 ```bash
 git clone https://github.com/atong01/conditional-flow-matching
