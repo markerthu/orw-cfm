@@ -134,6 +134,17 @@ url={https://openreview.net/forum?id=2IoFFexvuw}
 - wandb (optional, for logging)
 - tqdm
 
+## Pre-trained Models
+
+For experiments like CIFAR-10/MNIST, we recommend using pre-trained flow matching models from the torch-cfm repository. You can train a model using their example script:
+
+```bash
+git clone https://github.com/atong01/conditional-flow-matching
+cd conditional-flow-matching
+pip install -e .
+python examples/images/cifar10/train_cifar10.py
+```
+
 ## License
 
 [MIT License](https://mit-license.org/)
